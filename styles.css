@@ -12,7 +12,7 @@ body {
     
 }
 
-ul {
+.menu {
     margin: 0;
     padding: 0;
     display: flex;           /* horizontal menu */
@@ -30,7 +30,7 @@ a {
 }
 
 .cards{
-    height: 500px;
+    height: 480px;
     width: 300px;
     margin-left: 55px;
 }
@@ -40,5 +40,84 @@ a {
 }
 
 .cards:hover{
-    height: 510px;
+    transform: scale(1.05);       /* slightly increase size */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.landing-img{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+
+.mystiqwear {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  font-family: 'Playfair Display', serif;
+  width: 70%;              /* controls paragraph width */
+  margin-left: 150px;          /* centers it horizontally */
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: #a7a9ab;
+    color: white;
+
+    display: flex;           /* enable flexbox */
+    flex-direction: column;  /* stack items vertically */
+    align-items: center;     /* horizontal center */
+    justify-content: center; /* vertical center */
+    text-align: center;
+
+    padding: 0;              /* remove default padding */
+    margin: 0;               /* remove default margin */
+}
+
+footer h4,
+footer p,
+footer .footer-links,
+footer .copyright {
+    margin: 5px 0; 
+    font-size: large;          /* small uniform spacing */
+}
+
+.tagline, .copyright{
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+
+
+.footer-links {
+    display: flex;
+    justify-content: center; /* center the two lists horizontally */
+    gap: 40px;               /* space between lists */
+    margin: 10px 0;
+}
+
+.footer-class {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-class li {
+    margin: 5px 0;
+    font-size: large;
+}
+
+.footer-class a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-class a:hover {
+    text-decoration: underline;
 }
