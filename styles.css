@@ -1,0 +1,44 @@
+header {
+    background-color: #a7a9ab;
+    height: 80px;
+    display: flex;           /* put image and menu in a row */
+    align-items: center;     /* vertically center items */
+    padding: 0 20px;         /* some padding on left/right */
+    gap: 40px;               /* space between image and menu */
+}
+
+body {
+    margin: 0;
+    
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;           /* horizontal menu */
+    gap: 30px;               /* space between list items */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cards{
+    height: 500px;
+    width: 300px;
+    margin-left: 55px;
+}
+
+.cards-offer{
+    display: flex;
+}
+
+.cards:hover{
+    height: 510px;
+}
